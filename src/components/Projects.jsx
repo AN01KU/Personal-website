@@ -16,26 +16,31 @@ const Projects = () => {
       title: 'ShareMe',
       description: 'An image sharing platform.',
       imgUrl: projImg1,
+      gitUrl: 'https://github.com/AN01KU/ShareMe'
     },
     {
       title: 'VoteBlock',
       description: 'A blockchain based voting system.',
       imgUrl: projImg2,
+      gitUrl: ''
     },
     {
       title: 'Blood Bank Manager',
       description: 'Digitized workflow of blood donation in India.',
       imgUrl: projImg3,
+      gitUrl: 'https://github.com/AN01KU/Blood-bank'
     },
     {
       title: 'Breast Cancer Prediction',
       description: 'A Machine Learning model to predict breast cancer.',
       imgUrl: projImg4,
+      gitUrl: 'https://github.com/AN01KU/Breast-cancer'
     },
     {
       title: 'FoodBucks',
       description: 'A food managning website.',
       imgUrl: projImg5,
+      gitUrl: 'https://github.com/AN01KU/Foodbucks'
     },
   ]
 
