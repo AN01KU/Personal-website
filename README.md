@@ -2,6 +2,8 @@
 
 ![image](https://user-images.githubusercontent.com/53654327/198111862-42912542-ee3d-4742-9f96-e272a42e64da.png)
 
+Created using - ReactJS, Bootstrap, and Mailchimp api.
+
 ## Available Scripts
 
 In the project directory, you can run:
