@@ -230,6 +230,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	border-color: transparent;
 }
+.lets-connect a {
+  text-decoration: none;
+  color: inherit;
+}
+.lets-connect a:hover{
+  color:rgba(255, 255, 255, 1);
+}
 
 /************ Banner Css ************/
 .banner {

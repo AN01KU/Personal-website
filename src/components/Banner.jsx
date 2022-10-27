@@ -2,6 +2,9 @@ import { Container, Row, Col } from "react-bootstrap"
 import { ArrowRightCircle } from "react-bootstrap-icons"
 import headerImg from '../assets/img/header-img.svg'
 import { useState, useEffect } from "react"
+import { HashLink } from "react-router-hash-link"
+import { BrowserRouter as Router } from "react-router-dom";
+
 
 const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
@@ -46,21 +49,23 @@ const Banner = () => {
     }
 
     return (
-        <section className="banner" id="home">
-            <Container>
-                <Row className="align-items-center">
-                    <Col xs={12} md={6} xl={7}>
-                        <span className="tagline">Welcome to my Portfolio</span>
-                        <h1>{`Hi! I'm Ankush Ganesh`} <span className="txt-rotate" dataperiod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                        <button onClick={() => console.log('connect')}>Let's Connect <ArrowRightCircle size={25} /></button>
-                    </Col>
-                    <Col xs={12} md={6} xl={5}>
-                        <img src={headerImg} alt="Header Img" />
-                    </Col>
-                </Row>
-            </Container>
-        </section>
+        <Router>
+            <section className="banner" id="home">
+                <Container>
+                    <Row className="align-items-center">
+                        <Col xs={12} md={6} xl={7}>
+                            <span className="tagline">Welcome to my Portfolio</span>
+                            <h1>{`Hi! I'm Ankush Ganesh`} <span className="txt-rotate" dataperiod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
+                            <p>I'm an upcoming B.Tech graduate having strong foundation in software engineering and programming principles across multiple platforms. Experienced in Full stack web development, testing and debugging code. Quick learner of new technologies.</p>
+                            <button className='lets-connect' onClick={() => console.log('connect')}><a href='#connect'>Let's Connect <ArrowRightCircle size={25} /></a></button>
+                        </Col>
+                        <Col xs={12} md={6} xl={5}>
+                            <img src={headerImg} alt="Header Img" />
+                        </Col>
+                    </Row>
+                </Container>
+            </section>
+        </Router>
     )
 }
 
